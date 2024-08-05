@@ -1,0 +1,72 @@
+@keyframes flatJump {
+    0% {
+      transform: translateY(0) scaleY(1);
+    }
+    25% {
+      transform: translateY(-50px) scaleY(0.9);
+    }
+    50% {
+      transform: translateY(0) scaleY(1.1);
+    }
+    75% {
+      transform: translateY(0px) scaleY(0.95);
+    }
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
+  }
+  
+  @keyframes colorTransition {
+    0% {
+      color: #ff00ff; /* Red */
+    }
+    10% {
+      color: #ff7f00; /* Orange */
+    }
+    20% {
+      color: #ffff00; /* Yellow */
+    }
+    30% {
+      color: #7fff00; /* Chartreuse */
+    }
+    40% {
+      color: #ffff00; /* Green */
+    }
+    50% {
+      color: #00ff7f; /* Spring Green */
+    }
+    60% {
+      color: #00ffff; /* Cyan */
+    }
+    70% {
+      color: #007fff; /* Azure */
+    }
+    80% {
+      color: #00ffff; /* Blue */
+    }
+    90% {
+      color: #00ff7f; /* Violet */
+    }
+    100% {
+      color: #ff00ff; /* Magenta */
+    }
+  }
+  
+  .letter {
+    display: inline-block;
+    animation: flatJump 1s ease-in-out infinite, colorTransition 10s linear infinite;
+  }
+  
+  /* Add delay to each letter */
+  h1 span:nth-child(1) { animation-delay: 0s; }
+  h1 span:nth-child(2) { animation-delay: 0.1s; }
+  h1 span:nth-child(3) { animation-delay: 0.2s; }
+  h1 span:nth-child(4) { animation-delay: 0.3s; }
+  h1 span:nth-child(5) { animation-delay: 0.4s; }
+  h1 span:nth-child(6) { animation-delay: 0.5s; }
+  h1 span:nth-child(7) { animation-delay: 0.6s; }
+  h1 span:nth-child(8) { animation-delay: 0.7s; }
+  h1 span:nth-child(9) { animation-delay: 0.8s; }
+  h1 span:nth-child(10) { animation-delay: 0.9s; }
+  h1 span:nth-child(11) { animation-delay: 1s; }
+  
