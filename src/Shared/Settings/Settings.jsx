@@ -14,10 +14,10 @@ const Settings = () => {
     const { isDarkMode, toggleDarkMode } = useTheme()
     return (
         <div className={`hidden lg:block fixed top-32 z-50 transition-transform duration-300 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} right-0`}>
-            <div className='bg-[#121212] w-56 h-56 p-3 '>
+            <div className='bg-black w-56 h-56 p-3 '>
                 <div>
                     <h1 className='text-xl font-medium text-white mt-3 mb-2'>Cursor</h1>
-                    <select className='w-full p-2 bg-black text-white'>
+                    <select className='w-full p-2 bg-[#121212] text-white'>
                         <option value="Default">Default</option>
                         <option value="animated">Animated</option>
                     </select>
@@ -40,7 +40,7 @@ const Settings = () => {
                     </div>
                 </div>
             </div>
-            <button className='w-12 h-12 text-white bg-black flex justify-center items-center absolute top-24 -left-12'
+            <button className='w-12 h-12 text-white bg-black bg-opacity-50 flex justify-center items-center absolute top-24 -left-12'
                 onClick={toggleSettings}
             >
                 {isOpen ? <IoCloseOutline className='text-2xl' /> : <IoMdSettings className='text-2xl animate-spin' />}

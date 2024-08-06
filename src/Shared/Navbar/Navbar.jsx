@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from './../../assets/Images/logo-black.webp'
+import logoWhite from './../../assets/Images/logo-white.webp'
 import { IoSearch, IoCloseOutline } from "react-icons/io5";
 import { CgMenuRight } from "react-icons/cg";
 import { useTheme } from '../../Provider/ThemeContext';
@@ -19,7 +20,7 @@ const Navbar = () => {
     <nav className={isDarkMode ? " border-gray-200 px-4 sm:px-6 py-4 rounded border-b" : " border-gray-200 px-4 sm:px-6 py-4 rounded border-b"}>
       <div className="lg:mx-6 flex flex-wrap justify-between items-center mx-auto">
         <a href="/" className="flex items-center">
-          <img src={logo} className="h-11 mr-3" alt="Logo" />
+          <img src={isDarkMode ? logoWhite : logo} className="h-11 mr-3" alt="Logo" />
         </a>
         <div className="flex md:order-2 items-center">
           {
