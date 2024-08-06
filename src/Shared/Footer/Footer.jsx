@@ -5,12 +5,12 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className=' bg-[#121212] text-white '>
-            <div className='flex'>
-                <div className=' px-12 py-24 border-r border-b '>
+            <div className='md:flex lg:flex'>
+                <div className=' px-12 py-24 md:border-r md:border-b '>
                     <div>
                         <img src={logo} alt="Logo" className='h-8' />
                     </div>
-                    <p className='w-96 pt-10'>When do they work well, and when do they on us and finally, when do we actually need how can we avoid them.</p>
+                    <p className='lg:w-96 pt-10'>When do they work well, and when do they on us and finally, when do we actually need how can we avoid them.</p>
                 </div>
                 <div className='flex flex-col '>
                     <a href="" className='text-xl text-center px-6 py-8  uppercase border-b hover:bg-white duration-500 hover:text-black'>Facebook</a>
@@ -18,9 +18,9 @@ const Footer = () => {
                     <a href="" className='text-xl text-center px-6 py-8  uppercase border-b hover:bg-white duration-500 hover:text-black'>Linkedin</a>
                     <a href="" className='text-xl text-center px-6 py-8  uppercase border-b hover:bg-white duration-500 hover:text-black'>Instagram</a>
                 </div>
-                <div className='border-l border-b flex justify-center items-center w-full'>
+                <div className='md:border-l md:border-b flex justify-center items-center w-full'>
                     <h1 className='jelly-bounce text-[164px] uppercase '>
-                        <h1 class="text-[164px] uppercase">
+                        <h1 class="text-5xl  2xl:text-[164px] py-16 uppercase">
                             <span class="letter">L</span>
                             <span class="letter">e</span>
                             <span class="letter">t</span>
@@ -35,9 +35,8 @@ const Footer = () => {
                     </h1>
                 </div>
             </div>
-            <div className='flex justify-between py-16 px-12'>
-                <p>© 2022 - 2025 | Alrights reserved by Wealcoder</p>
-                <ul className='flex gap-10'>
+            <div className='text-center lg:flex flex-row-reverse  justify-between pb-10 md:py-16 px-8  md:px-12'>
+            <ul className='flex  md:gap-10'>
                     <li className="group relative overflow-hidden">
                         <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base text-white rounded md:p-0 uppercase">
                             <span className="block transition-transform duration-500 ease-in-out transform group-hover:-translate-y-full">
@@ -79,6 +78,7 @@ const Footer = () => {
                         </a>
                     </li>
                 </ul>
+                <p>© 2022 - 2025 | Alrights reserved by Wealcoder</p>
             </div>
         </div>
     );

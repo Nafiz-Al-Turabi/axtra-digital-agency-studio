@@ -53,8 +53,8 @@ const Navbar = () => {
             <CgMenuRight />
           </button>
         </div>
-        <div className="hidden w-full md:flex md:w-auto md:order-1">
-          <ul className="flex flex-col gap-10 p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+        <div className="hidden  w-full md:flex md:w-auto md:order-1">
+          <ul className="hidden 2xl:flex flex-col gap-10 p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
             <li className="group relative overflow-hidden">
               <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base text-gray-700 rounded md:p-0 uppercase">
                 <span className="block transition-transform duration-500 ease-in-out transform group-hover:-translate-y-full">
