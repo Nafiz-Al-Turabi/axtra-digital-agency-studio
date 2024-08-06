@@ -2,17 +2,21 @@ import React, { useState } from 'react';
 import logo from './../../assets/Images/logo-black.webp'
 import { IoSearch, IoCloseOutline } from "react-icons/io5";
 import { CgMenuRight } from "react-icons/cg";
+import { useTheme } from '../../Provider/ThemeContext';
 
 
 const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
+  const {isDarkMode}=useTheme();
+
 
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);
   };
 
+
   return (
-    <nav className="bg-white border-gray-200 px-4 sm:px-6 py-4 rounded border-b">
+    <nav className={isDarkMode ? " border-gray-200 px-4 sm:px-6 py-4 rounded border-b" : " border-gray-200 px-4 sm:px-6 py-4 rounded border-b"}>
       <div className="lg:mx-6 flex flex-wrap justify-between items-center mx-auto">
         <a href="/" className="flex items-center">
           <img src={logo} className="h-11 mr-3" alt="Logo" />
@@ -54,9 +58,9 @@ const Navbar = () => {
           </button>
         </div>
         <div className="hidden  w-full md:flex md:w-auto md:order-1">
-          <ul className="hidden 2xl:flex flex-col gap-10 p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+          <ul className="hidden 2xl:flex flex-col gap-10 p-4 mt-4  rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
             <li className="group relative overflow-hidden">
-              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base text-gray-700 rounded md:p-0 uppercase">
+              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base  rounded md:p-0 uppercase">
                 <span className="block transition-transform duration-500 ease-in-out transform group-hover:-translate-y-full">
                   Home
                 </span>
@@ -66,7 +70,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="group relative overflow-hidden">
-              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base text-gray-700 rounded md:p-0 uppercase">
+              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base  rounded md:p-0 uppercase">
                 <span className="block transition-transform duration-500 ease-in-out transform group-hover:-translate-y-full">
                   About
                 </span>
@@ -76,7 +80,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="group relative overflow-hidden">
-              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base text-gray-700 rounded md:p-0 uppercase">
+              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base  rounded md:p-0 uppercase">
                 <span className="block transition-transform duration-500 ease-in-out transform group-hover:-translate-y-full">
                   Pages
                 </span>
@@ -86,7 +90,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="group relative overflow-hidden">
-              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base text-gray-700 rounded md:p-0 uppercase">
+              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base  rounded md:p-0 uppercase">
                 <span className="block transition-transform duration-500 ease-in-out transform group-hover:-translate-y-full">
                   Services
                 </span>
@@ -96,7 +100,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="group relative overflow-hidden">
-              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base text-gray-700 rounded md:p-0 uppercase">
+              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base  rounded md:p-0 uppercase">
                 <span className="block transition-transform duration-500 ease-in-out transform group-hover:-translate-y-full">
                   Team
                 </span>
@@ -106,7 +110,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="group relative overflow-hidden">
-              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base text-gray-700 rounded md:p-0 uppercase">
+              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base  rounded md:p-0 uppercase">
                 <span className="block transition-transform duration-500 ease-in-out transform group-hover:-translate-y-full">
                   Blog
                 </span>
@@ -116,7 +120,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="group relative overflow-hidden">
-              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base text-gray-700 rounded md:p-0 uppercase">
+              <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-base  rounded md:p-0 uppercase">
                 <span className="block transition-transform duration-500 ease-in-out transform group-hover:-translate-y-full">
                   Contact
                 </span>
