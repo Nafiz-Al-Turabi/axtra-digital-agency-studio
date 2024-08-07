@@ -1,7 +1,7 @@
 button {
     position: relative;
     background-color: transparent;
-    color: white;
+    /* color: white; */
     overflow: hidden;
 }
 
