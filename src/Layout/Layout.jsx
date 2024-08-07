@@ -8,7 +8,7 @@ import { useTheme } from '../Provider/ThemeContext';
 const Layout = () => {
     const {isDarkMode}=useTheme();
     return (
-        <div className={`h-screen  ${isDarkMode ? 'dark' : 'light'}`}>
+        <div className={`  ${isDarkMode ? 'dark' : 'light'}`}>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Settings></Settings>
