@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import logo from './../../assets/Images/logo-white.webp'
 import { IoMdClose, IoMdSearch } from "react-icons/io";
-import { FaPlus,FaMinus } from "react-icons/fa";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 
-const SideNav = () => {
+const SideNav = ({ onClose }) => {
     const [showMoreItems, setShowMoreItems] = useState(false);
 
     const handleButtonClick = () => {
         setShowMoreItems(!showMoreItems);
     };
     return (
-        <div className='fixed top-0 bg-black h-screen w-full z-50'>
+        <div className='fixed top-0 bg-black h-screen w-full z-50 hidden'>
             <div className='flex'>
-                <div className='w-[15%] border-r border-gray-800'>
+                <div className='hidden 2xl:block 2xl:w-[15%] border-r border-gray-800'>
                     <div className='border-b border-gray-800 p-10'>
                         <img src={logo} alt="" className='h-12' />
                     </div>
@@ -29,7 +29,7 @@ const SideNav = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-[65%] h-screen overflow-hidden'>
+                <div className='w-full 2xl:w-[65%] h-screen overflow-hidden'>
                     <ul className='mt-32 overflow-y-auto h-full'>
                         <li className="flex justify-between group relative overflow-hidden border-y border-gray-800 p-6 ">
                             <a href="#" className="block py-2 tracking-tight pr-4 pl-3 text-5xl font-bold rounded md:p-0 uppercase">
@@ -65,7 +65,7 @@ const SideNav = () => {
                                 <li className='text-2xl mb-10 hover:tracking-wider duration-300 font-bold'>
                                     <a href="">Digital Agency</a>
                                 </li>
-                                
+
                             </div>
                         )}
 
@@ -141,10 +141,8 @@ const SideNav = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='w-1/4 bg-[#121212] h-screen'>
-                    <button className='text-2xl float-right h-12 w-12 bg-slate-700 flex justify-center items-center rounded-full mr-5 mt-5 hover:text-gray-400 duration-300 z-20'>
-                        <IoMdClose />
-                    </button>
+                <div className='hidden 2xl:block 2xl:w-1/4 bg-[#121212] h-screen'>
+
                     <div className='relative'>
                         <input type="text" className='w-80 p-4 rounded-full mt-32 ml-5 bg-transparent border border-gray-500 focus:outline-none ' placeholder='Search Keyword' />
                         <button className='text-2xl absolute top-[214px] right-10 hover:text-gray-500 duration-300'>
@@ -159,6 +157,10 @@ const SideNav = () => {
                     </div>
                 </div>
             </div>
+            <button className=' absolute top-2 right-2 h-12 w-12 bg-slate-700 flex justify-center items-center rounded-full mr-5 mt-5 hover:text-gray-400 duration-300 z-20'
+                onClick={onClose}>
+                <IoMdClose />
+            </button>
         </div>
     );
 };

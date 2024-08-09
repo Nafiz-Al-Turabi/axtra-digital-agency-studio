@@ -20,17 +20,17 @@ const Footer = () => {
                 </div>
                 <div className='md:border-l md:border-b flex justify-center items-center w-full'>
                     <h1 className='jelly-bounce text-[164px] uppercase '>
-                        <h1 class="text-5xl  2xl:text-[164px] py-16 uppercase">
-                            <span class="letter">L</span>
-                            <span class="letter">e</span>
-                            <span class="letter">t</span>
-                            <span class="letter">'</span>
-                            <span class="letter">s</span>
-                            <span class="letter mx-5"> </span>
-                            <span class="letter">T</span>
-                            <span class="letter">a</span>
-                            <span class="letter">l</span>
-                            <span class="letter">k</span>
+                        <h1 className="text-5xl  2xl:text-[164px] py-16 uppercase">
+                            <span className="letter">L</span>
+                            <span className="letter">e</span>
+                            <span className="letter">t</span>
+                            <span className="letter">'</span>
+                            <span className="letter">s</span>
+                            <span className="letter mx-5"> </span>
+                            <span className="letter">T</span>
+                            <span className="letter">a</span>
+                            <span className="letter">l</span>
+                            <span className="letter">k</span>
                         </h1>
                     </h1>
                 </div>

@@ -13,7 +13,7 @@ const Layout = () => {
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Settings></Settings>
-            <SideNav></SideNav>
+            {/* <SideNav></SideNav> */}
             <Footer></Footer>
         </div>
     );

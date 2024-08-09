@@ -46,7 +46,7 @@ const Banner = () => {
                     <h1 className='text-7xl md:text-[110px] lg:text-[180px] 2xl:text-[220px] font-extrabold uppercase'>Mark</h1>
                     <div className='md:flex flex-row-reverse justify-between lg:-mt-8 '>
                         <h1 className='text-7xl md:text-[110px] lg:text-[180px] 2xl:text-[220px] font-extrabold uppercase ml-28 md:ml-0'>Eting</h1>
-                        <p className={`w-96 text-lg md:mt-4 lg:mt-8 text-justify ${textColorClass}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate adipisci labore obcaecati sunt laudantium cum beatae qui. Inventore, consequatur.</p>
+                        <p className={`w-96 text-base md:mt-4 lg:mt-8 text-justify ${textColorClass}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate adipisci labore obcaecati sunt laudantium cum beatae qui. Inventore, consequatur.</p>
                     </div>
                 </div>
             </div>
