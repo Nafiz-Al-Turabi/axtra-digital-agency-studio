@@ -4,7 +4,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className=' bg-[#121212] text-white '>
+        <div className=' bg-black text-white '>
             <div className='md:flex lg:flex'>
                 <div className=' px-12 py-24 md:border-r md:border-b '>
                     <div>

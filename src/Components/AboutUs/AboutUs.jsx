@@ -37,7 +37,7 @@ const AboutUs = () => {
 
 
     return (
-        <div className='bg-[#121212] py-20 overflow-hidden relative'>
+        <div className='bg-black py-20 overflow-hidden relative'>
             <div className='md:flex lg:flex 2xl:flex justify-between max-w-7xl mx-auto'>
                 <div
                     className='w-full md:w-1/2 lg:w-1/2 2xl:w-1/2 2xl:mt-32'
