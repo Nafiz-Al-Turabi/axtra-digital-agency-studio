@@ -5,7 +5,10 @@ import { FaPlayCircle } from "react-icons/fa";
 import { IoCloseCircle } from "react-icons/io5";
 import image from './../../assets/Images/1.webp'
 import { HiArrowLongDown } from "react-icons/hi2";
-import './Banner.css'
+import './Banner.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 
 
@@ -43,10 +46,31 @@ const Banner = () => {
                     </p>
                 </div>
                 <div className=''>
-                    <h1 className='text-7xl md:text-[110px] lg:text-[180px] 2xl:text-[220px] font-extrabold uppercase'>Mark</h1>
+                    <h1
+                    data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-delay="10"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"
+                    className='text-7xl md:text-[110px] lg:text-[180px] 2xl:text-[220px] font-extrabold uppercase'>Mark</h1>
                     <div className='md:flex flex-row-reverse justify-between lg:-mt-8 '>
-                        <h1 className='text-7xl md:text-[110px] lg:text-[180px] 2xl:text-[220px] font-extrabold uppercase ml-28 md:ml-0'>Eting</h1>
-                        <p className={`w-96 text-base md:mt-4 lg:mt-8 text-justify ${textColorClass}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate adipisci labore obcaecati sunt laudantium cum beatae qui. Inventore, consequatur.</p>
+                        <h1
+                        data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-delay="10"
+                        data-aos-duration="1400"
+                        data-aos-easing="ease-in-out"
+                        data-aos-once="true"
+                        className='text-7xl md:text-[110px] lg:text-[180px] 2xl:text-[220px] font-extrabold uppercase ml-28 md:ml-0'>Eting</h1>
+                        <p
+                        data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-delay="10"
+                        data-aos-duration="3000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-once="true"
+                        className={`w-96 text-base md:mt-4 lg:mt-8 text-justify ${textColorClass}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate adipisci labore obcaecati sunt laudantium cum beatae qui. Inventore, consequatur.</p>
                     </div>
                 </div>
             </div>
